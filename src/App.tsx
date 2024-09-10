@@ -18,7 +18,7 @@ function App() {
       </div>
 
       <div className="content">
-        <h1 className="welcome-message">Welcome to {name}'s Profile!</h1>
+        <h1 className="welcome-message">{name}의 프로필입니다!</h1>
         <h2>취미: </h2>
         <ul>
           {hobbies.map((hobby, index) => (
