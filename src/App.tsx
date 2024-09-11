@@ -12,7 +12,7 @@ function App() {
       <div className="background-image"></div>
 
       <div className="content">
-        <h1 className="welcome-message">{name}의 프로필입니다!</h1>
+        <h1 className="welcome-message">{name}의 프로필</h1>
         <p>{studentinfo}</p>
         <p>나이: {age}</p>
         <h2>취미: </h2>

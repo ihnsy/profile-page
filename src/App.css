@@ -42,4 +42,50 @@ html {
 
 .welcome-message {
   font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  animation: glowing 3s infinite alternate ease-in-out, floating 5s infinite ease-in-out;
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #ffa7cdd6, 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7);
+  }
+
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  /* 나이 및 학생 정보 크기 */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.5rem;
+  /* 취미 크기 동일하게 설정 */
+  margin-bottom: 0.5rem;
 }
